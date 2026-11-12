@@ -2,7 +2,7 @@
 const poster = document.getElementById('poster');
 const title = document.getElementById('title');
 const description = document.getElementById('description');
-const movie = document.querySelector('movie');
+const movie = document.getElementById('movie');
 
 movie.addEventListener('change', () => {
     const selectedMovie = movie.value;
@@ -14,7 +14,7 @@ movie.addEventListener('change', () => {
         poster.alt = "Обложка мультфильма «Леди баг и Супер кот»"
     } else if (selectedMovie === "Shariki") {
         title.innerHTML = "Смешарики"
-        description.innerHTML = "Мультфильм о приключениях круглых зверятах, живущих в уютной Ромашковой долине."
+        description.innerHTML = "Мультфильм о приключениях круглых зверят, живущих в уютной Ромашковой долине."
         poster.src = "covers/2.jpg"
         poster.alt = "Обложка мультфильма «Смешарики»"
     } else if (selectedMovie === "Zootown"){
